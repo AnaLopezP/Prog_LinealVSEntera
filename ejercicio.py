@@ -10,8 +10,8 @@ modelo = cp_model.CpModel()
 solucionador = cp_model.CpSolver()
 #Variables
 '''EN ESTE PROBLEMA VAMOS A TRABAJAR EN TONELADAS'''
-piensoA = modelo.NewIntVar(1, 6, "piensoA")
-piensoB = modelo.NewIntVar(1, 4, "piensoB")
+piensoA = modelo.NewIntVar(0, 6, "piensoA")
+piensoB = modelo.NewIntVar(0, 4, "piensoB")
 
 #Restricciones
 modelo.Add(piensoB <= 2*piensoA)
