@@ -9,7 +9,7 @@ from ortools.sat.python import cp_model
 modelo = cp_model.CpModel()
 solucionador = cp_model.CpSolver()
 #Variables
-'''EN ESTE PROBLEMA VAMOS A TRABAJAN EN TONELADAS'''
+'''EN ESTE PROBLEMA VAMOS A TRABAJAR EN TONELADAS'''
 piensoA = modelo.NewIntVar(1, 6, "piensoA")
 piensoB = modelo.NewIntVar(1, 4, "piensoB")
 
